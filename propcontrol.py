@@ -49,8 +49,10 @@ class Solution:
             min = res[1]
 
             mid = (max+min)/2
+            y = (center - min) * (2)/(max - min) -1
 
-            return round((center-mid)/(2*(max-min)), 6)
+
+            return round(y, 6)
             pass
 
 
