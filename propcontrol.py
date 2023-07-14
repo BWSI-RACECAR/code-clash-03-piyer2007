@@ -50,7 +50,7 @@ class Solution:
 
             mid = (max+min)/2
 
-            return round((center-min)*(2)/(max-min)-1, 6)
+            return round((center-mid)/(2*(max-min)), 6)
             pass
 
 
