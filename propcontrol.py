@@ -45,14 +45,15 @@ class Solution:
             #return type: float
 
             #TODO: Write code below to return a float with the solution to the prompt.
-            max = res[0]
-            min = res[1]
+            old_max = res[0]
+            old_min = 0
+            old_span = old_max-old_min
 
-            mid = (max+min)/2
-            y = (center - min) * (2)/(max - min) -1
+            new_max = 1
+            new_min = -1
+            new_span = new_max-new_min
+            return (new_min+new_span * float(center-old_min)/float(old_span))
 
-
-            return round(y, 6)
             pass
 
 
