@@ -45,10 +45,10 @@ class Solution:
             #return type: float
 
             #TODO: Write code below to return a float with the solution to the prompt.
-            int max = res[0]
-            int min = res[1]
+            max = res[0]
+            min = res[1]
 
-            int mid = (max+min)/2
+            mid = (max+min)/2
 
             return round(mid - center, 6)
             pass
